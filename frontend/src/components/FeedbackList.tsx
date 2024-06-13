@@ -12,7 +12,7 @@ const FeedbackList: React.FC = () => {
   useEffect(() => {
     const fetchFeedbacks = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/feedback');
+        const response = await axios.get('http://localhost:2000/feedback');
         setFeedbacks(response.data);
       } catch (error) {
         console.error('Error fetching feedbacks', error);
