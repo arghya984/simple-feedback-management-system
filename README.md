@@ -16,24 +16,27 @@
 
    ```bash
    git clone https://github.com/arghya984/simple-feedback-management-system
-   Backend:
-   ```
+2. Backend:
+- Navigate to the backend folder.
+  ```bash
+   cd backend
+- Install dependencies. 
+  ```bash
+   npm install
+- Start the backend server. 
+  ```bash
+   npm run dev
+3. Frontend:
 
-Navigate to the backend folder.
+- Navigate to the frontend folder from the root directory. 
+  ```bash
+   cd frontend
+- Install dependencies. 
+  ```bash
+   npm install
+- Start the frontend development server. 
+  ```bash
+   npm start
 
-Install dependencies.
-
-Start the backend server.
-
-Frontend:
-
-Navigate to the frontend folder.
-
-Install dependencies.
-
-Start the frontend development server.
-
-Open your browser and visit http://localhost:3000 to view the application.
-
-Contribution
+## Contribution
 Contributions are appreciated! If you find any issues or have suggestions, please open an issue or a pull request on GitHub.
