@@ -1,11 +1,12 @@
 import React from 'react';
 import FeedbackForm from './components/FeedbackForm';
 import FeedbackList from './components/FeedbackList';
+import Header from './components/Header'
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Feedback Management System</h1>
+      <Header />
       <FeedbackForm />
       <FeedbackList />
     </div>

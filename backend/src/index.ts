@@ -7,7 +7,9 @@ app.use(cors());
 
 app.use(express.json());
 
-const feedbacks: { name: string; feedback: string }[] = [{name: "arghya", feedback:"ok"}, {name: "arfda", feedback:"odfsfsdk"}, {name: "arerrya", feedback:"oksdseq"} ];
+const feedbacks: { name: string; feedback: string }[] = [{ name: 'Arghya', feedback: 'Great app!' },
+  { name: 'Mike', feedback: 'Nice user interface.' },
+  { name: 'Jesse', feedback: 'Please make it more responsive' }, ];
 
 app.get('/feedback', (req, res) => {
   res.json(feedbacks);

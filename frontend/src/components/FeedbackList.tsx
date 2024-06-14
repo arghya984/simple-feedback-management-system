@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './FeedbackList.css'; 
 
 interface Feedback {
   name: string;
@@ -20,15 +21,13 @@ const FeedbackList: React.FC = () => {
     };
     fetchFeedbacks();
   }, []);
-  const divStyle = {
-    backgroundColor: 'green'
-  };
+
   return (
-    <div style={divStyle}>
-      <h2>Feedback List</h2>
-      <ul>
+    <div className="feedback-list-container">
+      <h2 className="feedback-list-heading">Feedback List</h2>
+      <ul className="feedback-list">
         {feedbacks.map((feedback, index) => (
-          <li key={index}>
+          <li key={index} className="feedback-item">
             <strong>{feedback.name}:</strong> {feedback.feedback}
           </li>
         ))}
